@@ -5,6 +5,8 @@ let collection = [
   "005.js",
     "004.js",
     "006.js",
+    "007.js",
+
 ];
 
 let collectionItem = localStorage.getItem('collectionItem');
