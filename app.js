@@ -1,4 +1,4 @@
-let collection = ["001.js","002.js","003.js"];
+let collection = ["001.js","002.js","003.js","004.js"];
 console.log(localStorage.getItem('collectionItem'));
 let collectionItem = localStorage.getItem('collectionItem');
 collectionItem++;
