@@ -43,8 +43,19 @@ function loadJS(FILE_URL, async = true) {
 
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
-if (params.file)
-{
-    file = params.file;
+if (params.file) {
+  file = params.file;
 }
 loadJS("./collection/" + file, false);
+
+async function loadSourceCode() {
+  const response = await fetch("./collection/" + file);
+  const data = await response.text();
+  var elemDiv = document.createElement('div');
+  elemDiv.innerHTML = '<pre id="preSourceCode"><code id="sourceCode" class="language-javascript"></code></pre>';
+  document.body.appendChild(elemDiv);
+  document.getElementById("sourceCode").innerHTML = data;
+  hljs.highlightAll();
+}
+
+setTimeout(loadSourceCode, 1000); 

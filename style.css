@@ -4,3 +4,41 @@ body{
     align-items: center;
     justify-content: center;
 }
+#preSourceCode{
+    position: absolute;
+    left:10px;
+    top:10px;
+    bottom:10px;
+    right:50%;
+    z-index:1;
+    margin: 0;
+    overflow: hidden;
+    font-size: 100%;
+}
+.hljs{
+    background-color: rgba(255,255,255,0) !important;
+}
+
+#scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  #sourceCode {  
+    overflow: hidden; 
+    transform: translateY(10%); 
+    opacity:0;   
+    animation: my-animation 30s linear infinite;
+  }
+
+  @keyframes my-animation {
+    0%   {transform: translateY(10%);opacity: 0;}
+    25%  {opacity: 1;}
+    50%  {}
+    75%  {opacity: 1;}
+    100% {transform: translateY(-100%);opacity: 0;}
+  }
+  
+ 
