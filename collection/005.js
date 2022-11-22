@@ -1,3 +1,5 @@
+//source: https://openprocessing.org/sketch/1693953/
+
 // Inspired by Paul Bourke (http://paulbourke.net/fractals/sinjulia/)
 // Reference: http://negativespace.net/art/julia-set-sinz
 const a = 1;

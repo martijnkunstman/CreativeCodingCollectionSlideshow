@@ -1,3 +1,5 @@
+//source: https://openprocessing.org/sketch/1627906
+
 // Press 0~9 number keys to see some (slight) visual difference: 0, 1 are the most dramatic.
 // You can also use Mouse to rotate the sphere and black fadeout plane. 
 // inspiration: three body problem (sf novel), the concept of constantly disappearing and evoloving planets in the outerspace 
