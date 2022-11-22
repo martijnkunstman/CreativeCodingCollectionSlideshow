@@ -44,7 +44,7 @@ function setup() {
 }
 
 function draw() {
-	//fadeToBlack();
+	fadeToBlack();
 	lights();
 	ambientMaterial(120);
 	ambientLight(ambientBrightness);
@@ -109,10 +109,10 @@ class Cube {
 // ref: https://openprocessing.org/sketch/1587239
 function fadeToBlack() {
 	// translate(0, 0, 0);
-	rotateX(cos(frameCount/4)*100);
-	rotateY(sin(frameCount/4)*100);
-  // fill(250, 250, 230, 40);
-	fill(0, 10); 
+	rotateX(cos(frameCount/3)*100);
+	rotateY(sin(frameCount/3)*100);
+  //fill(250, 250, 230, 40);
+	fill("rgba(0,0,0,0.9)"); 
 	beginShape();
 	vertex(-width/2, -height/2, 0);
 	vertex( width/2, -height/2, 0);
