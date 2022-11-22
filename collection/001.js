@@ -1,4 +1,4 @@
-//source https://openprocessing.org/sketch/1703954
+//source: https://openprocessing.org/sketch/1703954
 
 let palette;
 let ease, easeArray;

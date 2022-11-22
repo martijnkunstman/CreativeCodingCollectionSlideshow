@@ -1,4 +1,4 @@
-//source https://openprocessing.org/sketch/892108
+//source: https://openprocessing.org/sketch/892108
 
 let renderer;
 let castle;

@@ -1,27 +1,25 @@
-//source https://openprocessing.org/sketch/819688
+//source: https://openprocessing.org/sketch/819688
 
 setup = _ => {
-    createCanvas(W = 720, W);
-    fill(W, 50);
+    createCanvas(windowWidth, windowHeight);
+    fill("rgba(255,255,255,0.05)");
     Counter = 0;
 }
 
-
-
 draw = _ => {
     Counter++;
-    rect(0, 0, W, W);
-    Angle = (PI + sin(Counter * 0.02)) / 7;
-    for (j = 0; j < TWO_PI; j += TWO_PI / 8) {
-        Tree(7, W / 2, W / 2, j, 45);
+    rect(0, 0, windowWidth, windowHeight);
+    Angle = (PI + sin(Counter * 0.02)) / 8;
+    for (j = 0; j < TWO_PI; j += TWO_PI / 5) {
+        Tree(6, windowWidth / 2, windowHeight / 2, j, 50);
     }
-    copy(10, 10, W - 20, W - 20, 0, 0, W, W);
+    copy(20, 5, windowWidth-40, windowHeight-10, 0, 0, windowWidth, windowHeight);
 }
 
 Tree = (step, x, y, rad, lengs) => {
     if (step > 0) {
         inf = 20 - step; // influence of noise
-        n = noise((x + Counter) / W, (y - Counter) / W) * inf
+        n = noise((x + Counter) / windowWidth, (y - Counter) / windowHeight) * inf
         line(x, y, x += cos(rad) * lengs + cos(n) * inf, y += sin(rad) * lengs + sin(n) * inf)
         step--
         lengs *= .9
