@@ -1,16 +1,16 @@
 let collection = [
-  "001.js",
-  "002.js",
-  "003.js",
-  "005.js",
-  "004.js",
-  "006.js",
-  "007.js",
-  "008.js",
-  "009.js",
-  "010.js",
-  "011.js",
-  "012.js",
+  "001.js",//circle color black
+  "002.js",//stairs yellow all over
+  "004.js",//ants black circular
+  "005.js",//fractal build up from top
+  "003.js",//circle white petals 
+  "007.js",//circular black particles
+  "008.js",//black 3d
+  "006.js",//cubes cray
+  "010.js",//circular stripes black
+  "009.js",//white all over stripes
+  "011.js",//circular orbit 3d black
+  "012.js",//sketch white
 ];
 //
 let collectionItem = localStorage.getItem('collectionItem');
